@@ -1,13 +1,26 @@
-{
-  "type": "service_account",
-  "project_id": "norse-period-458112-i9",
-  "private_key_id": "6dee5bfab9bdf90009efcb9b5ca05c413c4410f0",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCxYR4pVf0rtCth\nGf+m/fmhVl+UapBVyOD0374Yz5J2l7eHyQEtA25pHapcbiZf26ZfmwTeuWUDs1Pw\nC63m7Qrb86SCCufC7L6H4rCVpBn7Fc048+rjBf3Gxib6lJG1LfXshZRryPx/uNrm\nLYqFhIOrFjPWkqanZNQKjM2BZJrlKRXZqkKPan/FCjkvPuHXBl9ZIGxzguId/fpL\nYtQ+LQ561N+bxD/nScrWcv3Avz5d5yIlsANcIr7xt/AB6MVAHc0GLXHcUwD+mI+0\n9qIacfI/VxA/Z/IELGgoHfypX3dr7AJKgtCgJkQnhhpAbMV+FWWV0J4+lP6A2yXi\n5rJNjJPtAgMBAAECggEALBA4XiPgjbIG4asD9V+bms7aVQPo4YqSiXooXsD3vRKg\n0rAl5OD4lU+7gZUSXtcxfAgGHG75L0Nly1iXZWmGvE+I0w4y9xr5FMgFPlMi6hsH\nHUoIlEdpfK6+QZrVHGkzsYMYdPMbeH37ENmI0vSxgbd0/q11DVnQi+Ng7K8JhHn3\nNSBqboVm9IyTL5Oq/OjVPQyvnEWU7L+/AFfBfod89295Eb+pmvht91X96KeuhRv8\nnlGzvEczaJDM7ZVzQCr6Ez7Q+GNEvvYr08ypE5eMfi1G53/xEhV+lc7NGK8d2s6s\nMEIuyQQZ0pTrcfxq2GiEqfqyWPVr4PlgYK5NrdNMmQKBgQDq9VwCfRDhg54L64GN\ny0AT2PRxeQ8BOWxOegALrMucsGD2CESPbNv1oRnpWGRezMsrtcBACtOIEz4MHpld\niawrfid3aQBNo7fp7twm1xUSabFia87/kgLvPuhydES84aD1TV4zLQ9rtk45VJFd\nsW1EHAjRolJxJYTVtwXWVQ2fOQKBgQDBQ7Rocg1s1YAaoOv4ZeUa2sgriVa933m7\nAab/zchuwtjTJUAJ4NKu80QfdK18ytJ+bSn8fA/GR+TydmZWjSbIONsTCVz5eaDU\nKWuIJj4qtyIiQTtKVopva51k8sNUtINiU8KLStwV1QGs8fnf3f7IqM+Y8eJH8TpH\nUUvK4UZmVQKBgGdgixohMuM2SLyP4xGjIs9YvryKehqczFV/AjQg0/ld9Vtq6dd9\nGw5o0oDDvm2jh6T0s+C5oraVWNB2Sh5Iq7L7L5wvW83NQecwjDaenYvbawuVyZ7S\n/G2NbTKmi3PbhjlH0DGOGuHWdXZuCgOCREQaXZr243Ua/+YUQAI8q+CpAoGAMBOW\nmnDc1BkcYANuEAHRB2graWEl2d/w2Utk7reTR7Ji28ulbY+m+Wx8otKUobmWuWqQ\nikWWav3Rf1tiw98jKaWzIb4vicPu9ThEjr7sshWSgTD2/dwfXe5IXidh3f11vY0W\nlS4PJ8MwQoSDY2RHEEWmNubdIoZot/sKPrLhn20CgYEAp2WU7BpfkmxYVgVNyRH0\nF+AM1KT06y7xOu+p3anLjlqI9th2pt1EbcU7hiYQXXYx93fUd7hs9i82yRsGeQJ1\nb/Ns2yK5kVKDRwCltCqTRDA+up6C08THpj/i774csMPhfEorvG6OI1YePYKhpCD3\nV3bk5ah9pcuTGFY9kEuaBH4=\n-----END PRIVATE KEY-----\n",
-  "client_email": "streamlit-access@norse-period-458112-i9.iam.gserviceaccount.com",
-  "client_id": "110055881322316116045",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/streamlit-access%40norse-period-458112-i9.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
+# ملف إعداد المتغيرات السرية لـ Streamlit
+# ضع هذا الملف في مجلد .streamlit/secrets.toml
+
+# بيانات حساب الخدمة من Google Cloud Console
+GOOGLE_SERVICE_ACCOUNT_EMAIL = "your-service-account@your-project.iam.gserviceaccount.com"
+
+# المفتاح الخاص (تأكد من تضمين \n بدلاً من أسطر جديدة حقيقية)
+GOOGLE_PRIVATE_KEY = "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC...\n-----END PRIVATE KEY-----"
+
+# معرف المفتاح الخاص
+GOOGLE_PRIVATE_KEY_ID = "your-private-key-id"
+
+# معرف العميل
+GOOGLE_CLIENT_ID = "your-client-id"
+
+# معرف المشروع
+GOOGLE_PROJECT_ID = "your-project-id"
+
+# معرف جدول Google Sheets
+GOOGLE_SHEET_ID = "1A2B3C4D5E6F7G8H9I0J1K2L3M4N5O6P7Q8R9S0T"
+
+# ملاحظات مهمة:
+# 1. تأكد من أن حساب الخدمة له صلاحية الوصول إلى Google Sheets
+# 2. شارك الجدول مع عنوان البريد الإلكتروني لحساب الخدمة
+# 3. فعّل Google Sheets API في Google Cloud Console
+# 4. لا تشارك هذا الملف مع أي شخص آخر
