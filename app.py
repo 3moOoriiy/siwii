@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import gspread
 from google.oauth2.service_account import Credentials
-import json
 
 # إعداد الاتصال بجوجل شيت
 SCOPE = [
@@ -11,10 +10,11 @@ SCOPE = [
     "https://www.googleapis.com/auth/drive"
 ]
 
-# تحميل بيانات اعتماد الخدمة من streamlit secrets
+# تحميل بيانات اعتماد الخدمة من streamlit secrets مباشرة بدون json.loads
 creds_dict = st.secrets["service_account"]
-CREDS = Credentials.from_service_account_info(creds_dict, scopes=SCOPE)
+CREDS = Credentials.from_service_account_info(dict(creds_dict), scopes=SCOPE)
 CLIENT = gspread.authorize(CREDS)
+
 # فتح الشيت الرئيسي (غير الاسم حسب الحاجة)
 SPREADSHEET_NAME = "company-data"
 
