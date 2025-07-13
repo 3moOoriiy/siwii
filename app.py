@@ -12,10 +12,9 @@ SCOPE = [
 ]
 
 # تحميل بيانات اعتماد الخدمة من streamlit secrets
-creds_dict = json.loads(st.secrets["service_account"])
+creds_dict = st.secrets["service_account"]
 CREDS = Credentials.from_service_account_info(creds_dict, scopes=SCOPE)
 CLIENT = gspread.authorize(CREDS)
-
 # فتح الشيت الرئيسي (غير الاسم حسب الحاجة)
 SPREADSHEET_NAME = "company-data"
 
